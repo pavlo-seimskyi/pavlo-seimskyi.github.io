@@ -1,20 +1,79 @@
-* {
-    font-family: Helvetica, Arial, sans-serif;
-}
-   
-   
-h1 {
-    color: SeaGreen;
-}
+/* black: #212738 */
+/* white: #EDF2EF */
+/* blue: #57C4E5 */
+/* pink: #F97068 */
+/* yellow: #FFB800 */
 
+/* Common style */
 
-p, 
-li {
-    font-size: 18px;
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: #EDF2EF;
+    margin: 0;
 }
-
 
 a {
-    text-decoration: none;
-    color: aqua;
+    color: #F97068;
+}
+
+/* Header */
+header {
+    display: grid;
+    place-items: center;
+    background-color: #212738;
+    height: 100px;
+    width: 100%;
+}
+
+header a {
+    color: #EDF2EF;
+}
+
+header nav {
+    color: #EDF2EF;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Intro banner */
+.intro-banner {
+    background-color: #212738;
+    height: 700px;
+}
+ 
+h1 {
+    color: #EDF2EF;
+}
+
+/* Work Experience */
+
+
+/* Projects */
+
+
+/* Skills */
+
+
+/* Footer */
+footer {
+    display: grid;
+    place-items: center;
+    background-color: #212738;
+    color: #EDF2EF;
+    height: 100px;
+    width: 100%;
+}
+
+footer a {
+    color: #EDF2EF;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin: 0 10px;
 }
