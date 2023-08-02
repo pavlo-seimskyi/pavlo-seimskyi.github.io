@@ -5,6 +5,7 @@
 /* pink: #F97068 */
 /* yellow: #FFB800 */
 
+
 /* Common style */
 
 * {
@@ -12,7 +13,6 @@
 }
 
 body {
-    
     font-family: 'Cabin', sans-serif;
     text-align: center;
     background-color: #EDF2EF;
@@ -32,6 +32,18 @@ a:hover {
 
 a:visited {
     color: #d8aaa8;
+}
+
+/* Background styles */
+
+.bg-dark {
+    background-color: #212738;
+    color: #EDF2EF;
+}
+
+.bg-light {
+    background-color: #EDF2EF;
+    color: #212738;
 }
 
 /* Containers and boxes */
@@ -54,18 +66,6 @@ a:visited {
     display: inline-block;
     margin: 20px;
     padding: 10px;
-}
-
-/* Background styles */
-
-.bg-dark {
-    background-color: #212738;
-    color: #EDF2EF;
-}
-
-.bg-light {
-    background-color: #EDF2EF;
-    color: #212738;
 }
 
 /* Header */
@@ -111,12 +111,11 @@ header nav ul li:hover {
 
 /* Main */
 main {
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 /* Intro banner */
 .intro-banner {
-    background-color: #212738;
     height: 700px;
 }
  
@@ -148,8 +147,6 @@ h1 {
 footer {
     display: grid;
     place-items: center;
-    background-color: #212738;
-    color: #EDF2EF;
     height: 100px;
     width: 100%;
 }
