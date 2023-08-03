@@ -121,7 +121,7 @@ main {
 
 /* Intro banner */
 .intro-banner {
-    height: 700px;
+    /* height: 50%; */
 }
  
 h1 {
@@ -137,22 +137,20 @@ h1 {
 
 /* Skills */
 .skills .container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 2rem 10%;
 }
 
 .skills .box {
-    min-width: 300px;
-    max-width: 500px;
-    min-height: 300px;
-    max-height: 500px;
+    min-width: 20%;
+    max-width: 50%;
+    min-height: 20%;
+    max-height: 50%;
 }
 
 /* Footer */
 footer {
     font-size: 0.9rem;
-    display: grid;
-    place-items: center;
+    padding: 1rem 0;
     width: 100%;
 }
 
@@ -193,8 +191,7 @@ footer nav ul li {
         padding: 0;
     }
     footer nav ul li {
-        display: flex;
-        flex-direction: column;
+        display: block;
         margin: 10px auto;
     }
 }
