@@ -19,6 +19,7 @@ body {
     background-color: #EDF2EF;
     color: #333333;
     margin: 0;
+    overflow: scroll;
 }
 
 a {
@@ -50,12 +51,12 @@ a:visited {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .box {
-    margin: 20px;
-    padding: 10px;
+    margin: 2rem;
+    padding: 1rem;
 }
 
 /* Header */
@@ -83,11 +84,9 @@ header {
 
 /* Menu */
 .menu {
-    display: flex;
+    float: right;
     font-size: 1.1rem;
-    justify-content: flex-end;
     margin-right: 50px;
-    /* justify-content: center; */
     text-transform: uppercase;
 }
 
@@ -116,12 +115,12 @@ header {
 
 /* Main */
 main {
-    padding-top: 80px;
+    padding-top: 5rem;
 }
 
 /* Intro banner */
 .intro-banner {
-    /* height: 50%; */
+    height: 50%;
 }
  
 h1 {
@@ -141,10 +140,10 @@ h1 {
 }
 
 .skills .box {
-    min-width: 20%;
-    max-width: 50%;
-    min-height: 20%;
-    max-height: 50%;
+    aspect-ratio: 1 / 1;
+    flex: 1 0 200px;
+    max-width: 250px;
+    max-height: 250px;
 }
 
 /* Footer */
