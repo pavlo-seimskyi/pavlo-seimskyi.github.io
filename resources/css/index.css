@@ -19,6 +19,7 @@ body {
     background-color: #EDF2EF;
     color: #333333;
     margin: 0;
+    overflow: scroll;
 }
 
 a {
@@ -50,17 +51,18 @@ a:visited {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .box {
-    margin: 20px;
-    padding: 10px;
+    margin: 2rem;
+    padding: 1rem;
 }
 
 /* Header */
 header {
     width: 100%;
+    height: 5rem;
     position: fixed;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
@@ -83,11 +85,9 @@ header {
 
 /* Menu */
 .menu {
-    display: flex;
+    float: right;
     font-size: 1.1rem;
-    justify-content: flex-end;
-    margin-right: 50px;
-    /* justify-content: center; */
+    margin-right: 3rem;
     text-transform: uppercase;
 }
 
@@ -116,12 +116,12 @@ header {
 
 /* Main */
 main {
-    padding-top: 80px;
+    padding-top: 5rem;
 }
 
 /* Intro banner */
 .intro-banner {
-    height: 700px;
+    height: calc(100vh - 5rem);
 }
  
 h1 {
@@ -137,22 +137,20 @@ h1 {
 
 /* Skills */
 .skills .container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 2rem 10%;
 }
 
 .skills .box {
-    min-width: 300px;
-    max-width: 500px;
-    min-height: 300px;
-    max-height: 500px;
+    aspect-ratio: 1 / 1;
+    flex: 1 0 200px;
+    max-width: 250px;
+    max-height: 250px;
 }
 
 /* Footer */
 footer {
     font-size: 0.9rem;
-    display: grid;
-    place-items: center;
+    padding: 1rem 0;
     width: 100%;
 }
 
@@ -188,13 +186,42 @@ footer nav ul li {
     }
 }
 
-@media (max-width: 500px) {
+/* Navigation starts having 2 rows */
+@media (max-width: 510px) {
+    main {
+        padding-top: 10rem;
+    }
+
+    header {
+        height: 7rem;
+    }
+    
+    .intro-banner{
+        height: calc(100vh - 7rem);
+    }
+
     footer nav ul {
         padding: 0;
     }
+
     footer nav ul li {
-        display: flex;
-        flex-direction: column;
+        display: block;
         margin: 10px auto;
+    }
+}
+
+/* mobile S */
+/* Navigation starts having 3 rows */
+@media (max-width: 340px) {
+    main {
+        padding-top: 12rem;
+    }
+
+    header {
+        height: 9rem;
+    }
+    
+    .intro-banner{
+        height: calc(100vh - 9rem);
     }
 }
