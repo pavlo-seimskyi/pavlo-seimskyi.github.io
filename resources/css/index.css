@@ -16,8 +16,8 @@ html {
 body {
     font-family: 'Cabin', sans-serif;
     text-align: center;
+    color: #383F53;
     background-color: #EDF2EF;
-    color: #333333;
     margin: 0;
     overflow: scroll;
 }
@@ -38,13 +38,13 @@ a:visited {
 
 /* Background styles */
 .bg-dark {
-    background-color: #212738;
+    background-color: #383F53;
     color: #EDF2EF;
 }
 
 .bg-light {
     background-color: #EDF2EF;
-    color: #212738;
+    color: #383F53;
 }
 
 /* Containers and boxes */
@@ -57,6 +57,8 @@ a:visited {
 .box {
     margin: 2rem;
     padding: 1rem;
+    border-radius: 5px;
+    aspect-ratio: 1 / 1;
 }
 
 /* Header */
@@ -133,7 +135,31 @@ h1 {
 
 
 /* Projects */
+/* .projects .container {} */
 
+.projects .box {
+    flex: 1 0 250px;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects .box a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.projects .box:hover {
+    transform: translateY(-5px); /* Lift the box upward slightly on hover */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* Display a slight shadow on hover */
+  }
+
+.projects .box img {
+    width: 100%;
+    height: 75%;
+    background-color: white;
+    object-fit: contain;
+    border-radius: 5px;
+}
 
 /* Skills */
 .skills .container {
@@ -141,7 +167,6 @@ h1 {
 }
 
 .skills .box {
-    aspect-ratio: 1 / 1;
     flex: 1 0 200px;
     max-width: 250px;
     max-height: 250px;
