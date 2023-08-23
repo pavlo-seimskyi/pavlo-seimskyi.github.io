@@ -1,0 +1,8 @@
+# npm environment
+node_modules
+
+# Mac files
+.DS_Store
+
+# dotenv environment variables file
+.env

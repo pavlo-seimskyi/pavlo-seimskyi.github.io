@@ -1,0 +1,22 @@
+{
+  "name": "pavlo-seimskyi.github.io",
+  "version": "1.0.0",
+  "description": "Pavlo Seimskyi's Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/**/*_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavlo-seimskyi/pavlo-seimskyi.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavlo-seimskyi/pavlo-seimskyi.github.io/issues"
+  },
+  "homepage": "https://github.com/pavlo-seimskyi/pavlo-seimskyi.github.io#readme",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
